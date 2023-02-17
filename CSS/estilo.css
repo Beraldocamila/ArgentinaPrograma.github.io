@@ -1,0 +1,266 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+
+}
+
+::selection{
+    background-color: #ebbac5;
+    color: white;
+}
+/* HEADER */
+
+header{
+    background-color: #d8798e;
+    height: 55vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+}
+
+header #contenedor-header, #contenedor-iconos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#imagen{
+    height: 280px;
+    width: 320px;
+}
+
+h1{
+    border-bottom: solid 2px #ebbac5;
+    padding-bottom: 30px;
+    
+}
+
+#contenedor-data{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    width: 40%;
+}
+
+#contenedor-iconos #iconos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 80%;
+} 
+
+#iconos li{
+    font-size: 30px;
+    transition: all .4s ease-in-out;
+}
+
+.bi{
+    font-size: 30px;
+}
+
+#iconos li:hover{
+    cursor:pointer;
+    filter: drop-shadow(0px 0px 4px rgba(255, 255, 255, 0.518));
+    transform: scale(1.2);
+}
+
+#tituloInfo{
+    background-color: #f7cbd4;
+    margin: 10px 35%;
+    color: #d8798e;
+    font-weight: bolder;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+#info{
+    font-weight: bolder ;
+    font-size: 25px;
+    border-radius: 5px;
+    display: inline;
+    padding: 10px 20px;
+}
+
+.border{
+    border: solid 1px white;
+}
+
+.seleccionado{
+    filter: drop-shadow(0px 0px 4px rgba(255, 255, 255, 0.518));
+    transform: scale(1.2);
+}
+
+/* SECTION */
+
+section{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#contenido{
+    font-size: 30px;
+    height: 45vh;
+    padding-top: 10%;
+
+}
+#contenido ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 10%;
+}
+
+.link{
+    text-decoration: none;
+    color: #d8798e;
+    font-weight: bolder;
+}
+
+.link:hover{
+    color: #ebbac5;
+}
+
+
+div h2{
+    margin-bottom: 30px;
+    color: white;
+    font-weight: bolder;
+    background-color: #d8798e;
+    padding: 10px 0;
+}
+
+
+
+#contenedor-estudios, #contenedor-experiencias, #contenedor-habilidades, #contenedor-idiomas, #contenedor-informatica {
+    padding: 20px 0px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    /* border-bottom: 2px solid #d8798e; */
+
+}
+
+.punteado{
+    padding-left: 0px;
+}
+
+ul li{
+    list-style: none;
+    padding-bottom: 20px;
+    
+}
+
+li h3{
+    color: #d8798e;
+    display: inline;
+}
+
+
+.habilidades{
+color: #d8798e;
+margin: 10px 45%;
+}
+
+.habilidades:hover{
+    background-color: #d8798e;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.oculto{
+    display: none;
+}
+.mostrar{
+    display: block;
+}
+
+.irArriba{
+    color: #d8798e;
+
+}
+/* FOOTER */
+
+footer{
+    height: 50px;
+    background-color: #e38ea0c2;
+    color: black;
+    text-align: center;
+}
+
+footer p{
+    font-size: 20px;
+    padding-top: 10px;
+}
+
+/* MEDIA QUERIES */
+
+/* TABLET */
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    #tituloInfo{
+        margin: 10px 30%;
+        font-size: 15px;
+    }
+    #info{
+        font-size: 20px;
+    }
+
+    #contenido{
+        font-size: 20px;
+        padding-top: 15%;
+    }
+    #contenido ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0 2%;
+    }
+
+    footer p{
+        font-size: 15px;
+    }
+}
+
+/* CELLPHONE */
+@media screen and (max-width: 767px){
+    header{
+        height: auto;
+        
+    }
+    header #contenedor-header{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding-bottom: 20px;
+    }
+
+    img{
+        margin: 20px 0 20px 30%;
+    }
+
+    #contenedor-data{
+        width: 80%;
+        margin-left: 10%;
+    }
+    #contenedor-iconos #iconos{
+
+        width: 100%;
+    } 
+    #contenido{
+        font-size: 20px;
+        padding-top: 15%;
+    }
+    #contenido ul{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 20%;
+    }
+    footer p{
+        font-size: 15px;
+    }
+}
