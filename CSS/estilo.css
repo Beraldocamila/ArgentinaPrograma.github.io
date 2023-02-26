@@ -44,6 +44,7 @@ header #contenedor-header, #contenedor-iconos{
     width: 40%;
 }
 
+/* header - iconos */
 #contenedor-iconos #iconos{
     display: flex;
     flex-direction: row;
@@ -62,19 +63,19 @@ header #contenedor-header, #contenedor-iconos{
     transform: scale(1.2);
 }
 
+/* header - informacion */
+
 #tituloInfo{
-    background-color: #f7cbd4;
-    margin: 10px 35%;
-    color: #d8798e;
+    margin: 5px 35%;
+    color: #f7cbd4;
     font-weight: bolder;
-    border-radius: 5px;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 #info{
     font-weight: bolder ;
-    font-size: 25px;
-    padding: 10px 20px;
+    font-size: 30px;
+    padding: 5px 20px;
 }
 
 /* SECTION */
@@ -84,6 +85,8 @@ section{
     display: flex;
     flex-direction: column;
 }
+
+/* section - links */
 
 #contenido{
     font-size: 30px;
@@ -108,7 +111,7 @@ section{
     color: #ebbac5;
 }
 
-
+/* section - titulos */
 div h2{
     margin-bottom: 30px;
     color: white;
@@ -118,17 +121,16 @@ div h2{
 }
 
 
+/* section - contenedores */
 
 #contenedor-estudios, #contenedor-experiencias, #contenedor-habilidades, #contenedor-idiomas, #contenedor-informatica {
     padding: 20px 0px;
     text-align: center;
     display: flex;
     flex-direction: column;
-    /* border-bottom: 2px solid #d8798e; */
-
 }
 
-.punteado{
+.lista{
     padding-left: 0px;
 }
 
@@ -143,7 +145,7 @@ li h3{
     display: inline;
 }
 
-
+/* section - contenedor habilidades */
 .habilidades{
 color: #d8798e;
 margin: 10px 45%;
@@ -164,10 +166,11 @@ margin: 10px 45%;
     display: block;
 }
 
+/* section - boton ir arriba */
 .irArriba{
     color: #d8798e;
-
 }
+
 /* FOOTER */
 
 footer{
