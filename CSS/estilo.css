@@ -2,13 +2,13 @@
     margin: 0;
     padding: 0;
     font-family: 'Raleway', sans-serif;
-
 }
 
 ::selection{
     background-color: #ebbac5;
     color: white;
 }
+
 /* HEADER */
 
 header{
@@ -31,10 +31,9 @@ header #contenedor-header, #contenedor-iconos{
     width: 320px;
 }
 
-h1{
+.nombre{
     border-bottom: solid 2px #ebbac5;
     padding-bottom: 30px;
-    
 }
 
 #contenedor-data{
@@ -52,16 +51,12 @@ h1{
     width: 80%;
 } 
 
-#iconos li{
+#iconos .bi{
     font-size: 30px;
     transition: all .4s ease-in-out;
 }
 
-.bi{
-    font-size: 30px;
-}
-
-#iconos li:hover{
+#iconos .bi:hover{
     cursor:pointer;
     filter: drop-shadow(0px 0px 4px rgba(255, 255, 255, 0.518));
     transform: scale(1.2);
@@ -79,18 +74,7 @@ h1{
 #info{
     font-weight: bolder ;
     font-size: 25px;
-    border-radius: 5px;
-    display: inline;
     padding: 10px 20px;
-}
-
-.border{
-    border: solid 1px white;
-}
-
-.seleccionado{
-    filter: drop-shadow(0px 0px 4px rgba(255, 255, 255, 0.518));
-    transform: scale(1.2);
 }
 
 /* SECTION */
