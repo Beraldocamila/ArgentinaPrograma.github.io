@@ -31,7 +31,7 @@ header #contenedor-header, #contenedor-iconos{
     width: 320px;
 }
 
-.nombre{
+#nombre{
     border-bottom: solid 2px #ebbac5;
     padding-bottom: 30px;
 }
